@@ -126,14 +126,28 @@
 </template>
 <script>
 // 引入组件
-import ShopList from '../../components/ShopList/ShopList.vue'
+import ShopList from "../../components/ShopList/ShopList.vue";
+// 引入Swiper
+import Swiper from "swiper";
+// 引入Swiper .css
+import "swiper/css/swiper.css";
 export default {
-  name: 'MSite',
+  name: "MSite",
   // 注册组件
   components: {
     ShopList
+  },
+  //界面显示之后
+  mounted() {
+    var mySwiper = new Swiper(".swiper-container", {
+      loop: true, // 循环模式选项
+      // 如果需要分页器
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    })
   }
-}
+};
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
 @import '../../common/stylus/mixins.styl'
