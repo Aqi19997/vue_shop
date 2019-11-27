@@ -3,6 +3,8 @@ import MSite from '../pages/MSite/MSite.vue'
 import Search from '../pages/Search/Search.vue'
 import Order from '../pages/Order/Order.vue'
 import Profile from '../pages/Profile/Profile.vue'
+// 引入登录组件
+import Login from '../pages/Login/Login.vue'
 // 注册路由并暴露出去
 export default [
   {
@@ -20,6 +22,10 @@ export default [
   {
     path: '/profile',
     component: Profile
+  },
+  {
+    path: '/login',
+    component: Login
   },
   {
     path: '/',

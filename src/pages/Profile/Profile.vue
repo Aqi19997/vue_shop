@@ -3,7 +3,7 @@
     <section class="profile">
       <Header title="我 的"/>
       <section class="profile-number">
-        <a href="javascript:" class="profile-link">
+        <a href="javascript:" class="profile-link" @click="$router.push('/login')">
           <div class="profile_image">
             <i class="iconfont icon-person"></i>
           </div>
