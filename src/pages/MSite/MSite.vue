@@ -139,6 +139,7 @@ export default {
   },
   //界面显示之后
   mounted() {
+    // 有问题,以后要修改
     var mySwiper = new Swiper(".swiper-container", {
       loop: true, // 循环模式选项
       // 如果需要分页器
@@ -147,7 +148,7 @@ export default {
       }
     })
   }
-};
+}
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
 @import '../../common/stylus/mixins.styl'
