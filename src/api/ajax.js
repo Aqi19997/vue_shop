@@ -24,3 +24,4 @@ axios.interceptors.response.use(response => {
   return new Promise(() => {})
 })
 // 暴露axios
+export default axios
